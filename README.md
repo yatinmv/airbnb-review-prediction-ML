@@ -1,5 +1,5 @@
 
-#Airbnb Review Prediction using ML
+# Airbnb Review Prediction using ML
 
 ## Project Description
 
@@ -9,7 +9,7 @@ We perform data cleaning and exploratory data analysis to understand the dataset
 
 ## Data Description
 
-The dataset used for this project is from Airbnb listings in Amsterdam. It includes information such as the listing's price, location, and reviews from past customers. The dataset is preprocessed to remove any missing values, outliers and duplicates.
+The dataset used for this project is from Airbnb listings. It includes information such as the listing's price, location, and reviews from past customers. The dataset is preprocessed to remove any missing values, outliers and duplicates.
 
 ## Methods Used
 
@@ -21,15 +21,16 @@ The dataset used for this project is from Airbnb listings in Amsterdam. It inclu
 
 The following table shows the different values of hyperparameters we obtained from our cross-validation:
 
-| Predicted Value | Hyperparameters | k   | maxFeatures | nEstimators |
-|----------------|----------------|-----|-------------|-------------|
-| cleanliness    | 9              | 5   | 20          |             |
-| location       | 9              | 5   | 50          |             |
-| communication  | 9              | 5   | 20          |             |
-| value          | 9              | 10  | 50          |             |
-| check-in       | 7              | 1   | 20          |             |
-| accuracy       | 9              | 1   | 50          |             |
-| rating         | 7              | 10  | 10          |             |
+| Predicted value            | k  | maxFeatures | nEstimators |
+|----------------------------|---|-------------|-------------|
+| review_scores_cleanliness | 9 | 5           | 20          |
+| review_scores_location    | 9 | 5           | 50          |
+| review_scores_communication | 9 | 5          | 20          |
+| review_scores_value       | 9 | 10          | 50          |
+| review_scores_checkin     | 7 | 1           | 20          |
+| review_scores_accuracy    | 9 | 1           | 50          |
+| review_scores_rating      | 7 | 10          | 10          |
+
 
 The following table shows the mean squared error in predicting the various aspects for different machine learning models. For our baseline model, we choose a model which predicts the mean of the rating value. 
 
